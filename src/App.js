@@ -4,7 +4,7 @@ import { React, useState } from "react";
 // increase - this will increment the value
 // decrease - this will decrement the value
 // reset - to reset the counter back to zero.
- 
+
 export default function App() {
   const [counter, setCounter] = useState(0);
 
@@ -13,9 +13,13 @@ export default function App() {
     setCounter((count) => count + 1);
   };
 
+  // used an if statement to make the minimum value 0, to prevent the value going into negatve digits
+
   //decrease counter
   const decrease = () => {
-    setCounter((count) => count - 1);
+    if (counter > 0) {
+      setCounter((count) => count - 1);
+    }
   };
 
   //reset counter

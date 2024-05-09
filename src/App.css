@@ -1,0 +1,67 @@
+@import url(https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap);
+
+* {
+  font-family: "Roboto", sans-serif;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.counter {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+  row-gap: 20px;
+}
+
+.counter h1 {
+  color: #100036;
+  font-size: 40px;
+}
+
+.counter__output {
+  font-size: 40px;
+  color: #740707;
+}
+
+.btn__container {
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  column-gap: 20px;
+}
+
+.control__btn {
+  font-size: 20px;
+  padding: 10px 20px;
+  background-color: transparent;
+  color: #100036;
+  border: 1px solid #100036;
+  cursor: pointer;
+  transition: 0.2s ease-in-out;
+}
+
+.control__btn:hover {
+  background-color: #100036;
+  color: #ffffff;
+  border: 1px solid #100036;
+}
+
+.reset {
+  width: 100px;
+  font-size: 18px;
+  padding: 10px 20px;
+  background-color: transparent;
+  color: #100036;
+  border: 1px solid #100036;
+  cursor: pointer;
+  transition: 0.2s ease-in-out;
+}
+
+.reset:hover {
+  background-color: #100036;
+  color: rgb(255, 255, 255);
+  border: 1px solid #100036;
+}
